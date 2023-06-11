@@ -7,6 +7,7 @@ import Login from "./Components/login";
 import AddProduct from "./Components/AddProduct";
 import ProductList from "./Components/ProductList";
 import UpdateProduct from "./Components/UpdateProduct";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/login" element={<Login />} />
         </Routes>
       </BrowserRouter>
+      <ToastContainer />
       <Footer />
     </div>
   );
