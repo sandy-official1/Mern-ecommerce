@@ -9,6 +9,7 @@ const Nav = () => {
   const logout = () => {
     localStorage.clear();
     navigate("/signup");
+    toast.success("Logged out successfully!");
   };
   return (
     <div>

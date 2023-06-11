@@ -32,6 +32,7 @@ const ProductList = () => {
       });
       const result = await response.json();
       if (response.ok) {
+        toast.success("Product deleted successfully");
         getProducts();
       } else {
         console.error("Failed to delete product:", result);

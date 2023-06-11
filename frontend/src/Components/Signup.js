@@ -26,6 +26,7 @@ const SignUp = () => {
     console.warn(result);
     localStorage.setItem("user", JSON.stringify(result.result));
     localStorage.setItem("token", JSON.stringify(result.auth));
+    toast.success("Successfully signed up!");
 
     navigate("/");
   };

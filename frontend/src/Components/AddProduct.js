@@ -28,6 +28,7 @@ const AddProduct = () => {
     });
     result = await result.json();
     console.warn(result);
+    toast.success("Product added successfully!");
 
     // Redirect to product page
     navigate("/");
